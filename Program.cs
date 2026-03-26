@@ -11,8 +11,29 @@ namespace Peogramlama_vize_calismalari
         static void Main(string[] args)
         {
             hesap_makinesi hesapmakinesiuygulamasi = new hesap_makinesi();
-            hesapmakinesiuygulamasi.hesapmakinesi();
-            Console.ReadLine();
+            Rehber rehberuygulamasi = new Rehber();
+           
+            while (true) {
+                Console.Write("Hangi uygulamayı kullanmak istiyorsunuz? \n1: Rehber \n2: Hesap Makinesi\n3: Çıkış\nSeçiminiz: ");
+
+                switch (Console.ReadLine())
+                {
+                    case "1":
+                        rehberuygulamasi.rehber();
+                        break;
+                    case "2":
+                        hesapmakinesiuygulamasi.hesapmakinesi();
+                        break;
+                    case "3":
+                        Console.WriteLine("\nÇıkış yapılıyor...");
+                        return;
+                    default:
+                        Console.WriteLine("\nGeçersiz seçim.");
+                        break;
+                }
+            }
+            
+            
         }
     }
 }

@@ -14,12 +14,14 @@ namespace Peogramlama_vize_calismalari
         public void rehber()
         {
             bool sistemcalisiyor = true;
-            bool menu = true;
             Console.WriteLine("Rehber uygulamasına hoşgeldiniz");
             senkronEt();
+            
 
             while (sistemcalisiyor)
             {
+                bool menu = true;
+
                 Console.WriteLine("\n\n1 -> Kişi Ekle\n2 -> Kişi Listesi\n3 -> Çıkış");
                 Console.Write("\nYapmak istediğiniz işlemi seçiniz:");
 
