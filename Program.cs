@@ -10,6 +10,9 @@ namespace Peogramlama_vize_calismalari
     {
         static void Main(string[] args)
         {
+            hesap_makinesi hesapmakinesiuygulamasi = new hesap_makinesi();
+            hesapmakinesiuygulamasi.hesapmakinesi();
+            Console.ReadLine();
         }
     }
 }
