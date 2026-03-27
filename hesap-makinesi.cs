@@ -20,6 +20,8 @@ namespace Peogramlama_vize_calismalari
             Console.WriteLine("\n\n+ -> Toplama\n- -> Çıkarma\n* -> Çarpma \n/ -> Bölme");
 
             Console.Write("\nİlk Sayıyı Girin: ");
+            
+            
             sayi1 =Convert.ToInt32(Console.ReadLine());
             Console.Write("\nİkinci Sayıyı Girin: ");
             sayi2 =Convert.ToInt32(Console.ReadLine());
