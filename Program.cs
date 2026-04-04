@@ -22,7 +22,9 @@ namespace Peogramlama_vize_calismalari
             hesap_makinesi hesapmakinesiuygulamasi = new hesap_makinesi();
             // Rehber sınıfından nesne oluşturuluyor ve değişkene atanıyor
             Rehber rehberuygulamasi = new Rehber();
-           
+
+            deney_alani deneyalani = new deney_alani();
+
             // Sonsuz döngü oluşturuluyor (kullanıcı çıkış seçinceye kadar)
             while (true) {
                 // Kullanıcıya ana menüyü gösteren mesaj yazdırılıyor
@@ -40,11 +42,16 @@ namespace Peogramlama_vize_calismalari
                         hesapmakinesiuygulamasi.hesapmakinesi();
                         break;
                     // Seçim 3: Program sona erdirilecek
+                    case "4":
+                        deneyalani.deneyalani();
+                        break;
+
                     case "3":
                         // Çıkış mesajı gösteriliyor
                         Console.WriteLine("\nÇıkış yapılıyor...");
                         // Main metodu sonlandırılarak program kapatılıyor
                         return;
+                    
                     // Tanımlanmamış seçim girilirse
                     default:
                         // Hata mesajı gösteriliyor
